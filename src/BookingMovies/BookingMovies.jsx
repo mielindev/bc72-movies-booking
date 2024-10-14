@@ -1,8 +1,7 @@
 import React from "react";
 import background from "../image/bgmovie.jpg";
-import NameFill from "./NameFill";
-import ListSeat from "./ListSeat";
-import CartSeat from "./CartSeat";
+import List from "./List";
+import Cart from "./Cart";
 
 export default function BookingMovies() {
   return (
@@ -10,25 +9,25 @@ export default function BookingMovies() {
       style={{
         backgroundImage: `url(${background})`,
         width: "100%",
-        height: "100vh",
+        height: "110vh",
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
     >
-      <h2 className="text-uppercase text-center py-4 text-white text-4xl font-medium">
-        Movie Seat Selection
-      </h2>
       <div
         style={{
-          backgroundColor: `rgba(128, 128, 128, 0.34)`,
+          backgroundColor: `rgba(0, 0, 0, 0.6)`,
+          width: "100%",
+          height: "110vh",
         }}
-        className="d-flex mx-auto w-1/2 p-10"
       >
-        <div className="content w-100">
-          <NameFill />
-          <ListSeat />
-          <CartSeat />
+        <h2 className="text-uppercase text-center pb-2 text-yellow-600 text-3xl font-bold">
+          đặt vé xem phim
+        </h2>
+        <div className="row mx-auto">
+          <List />
+          <Cart />
         </div>
       </div>
     </div>
